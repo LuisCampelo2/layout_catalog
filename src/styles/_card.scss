@@ -16,6 +16,10 @@ $font-primary: 'Roboto', sans-serif;
     top: 0;
     position: relative;
 
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+    }
     .card-background {
       width: 198px;
       height: 406px;
@@ -46,6 +50,10 @@ $font-primary: 'Roboto', sans-serif;
       font-weight: 500;
       line-height: 18px;
       word-wrap: break-word;
+
+      &:hover {
+        color: #34568b;
+      }
     }
 
     .product-code {
@@ -135,20 +143,19 @@ $font-primary: 'Roboto', sans-serif;
     &__star {
       width: 16px;
       height: 16px;
-      background-image: url('images/star.svg');
+      background-image: url('../images/star-active.svg');
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
-
-      &--filled {
-        background-image: url('../images/star-active.svg');
-      }
     }
 
-    @for $i from 1 through 5 {
-      &--#{$i} &__star:nth-child(-n + #{$i}) {
-        background-image: url('../images/star.svg');
-      }
+    &__star-off {
+      background-image: url('../images/star.svg');
+      width: 16px;
+      height: 16px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
     }
   }
 }
