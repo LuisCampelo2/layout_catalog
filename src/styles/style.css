@@ -44,7 +44,7 @@ header {
 
 .link::after,
 .is-active::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -93,7 +93,7 @@ header {
 }
 
 .link::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: var(--underline-offset);
   left: 0;
@@ -246,14 +246,14 @@ header {
 .product-card .stars__star {
   width: 16px;
   height: 16px;
-  background-image: url("../images/star-active.svg");
+  background-image: url('../images/star-active.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .product-card .stars__star-off {
-  background-image: url("../images/star.svg");
+  background-image: url('../images/star.svg');
   width: 16px;
   height: 16px;
   background-repeat: no-repeat;
